@@ -1,0 +1,11 @@
+<p>rest-login works!</p>
+
+<form [formGroup]='loginForm'  (ngSubmit)='onSubmit()'>
+    <label for="userEmail">Email: </label>
+    <input type="text"  formControlName="restaurantEmail">
+
+    <label for="userPassword">Password: </label>
+    <input type="text"  formControlName="restaurantPassword">
+
+    <button>Submit</button>
+</form>

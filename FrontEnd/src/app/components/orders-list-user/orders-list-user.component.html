@@ -1,0 +1,30 @@
+<p>orders-list-user works!</p>
+
+<table  class="table">
+    <thead>
+      <tr>
+     
+        <th scope="col">Order ID</th>
+        <th scope="col">Order Status</th>
+        <th scope="col">Order Time</th>
+        <th scope="col">Total</th>
+        <th scope="col">User Id</th>
+        <th scope="col">Action</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orderList">
+     
+        <td>{{order.orderId}}</td>
+        <td>{{order.orderStatus}}</td>
+        <td>{{order.orderTime}}</td>
+        <td>{{order.total}}</td>
+        <td>{{order.user.userId}}</td>
+        <td><h4 (click)="rejectOrder(order.orderId)">Cancel Order</h4></td>
+      </tr>
+    
+    </tbody>
+  </table>
+
+  <!-- <h1><button class="nav-link" href="#" routerLink="cartPage">View Cart 1</button></h1> -->

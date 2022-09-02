@@ -1,0 +1,42 @@
+<p>edit-food works!</p>
+
+
+<div class="mainDiv">
+    <form [formGroup]='foodForm' (ngSubmit)='onSubmit()' style="border:1px solid #ccc">
+        <div class="container">
+            <h1><strong>Edit Food</strong></h1>
+
+
+            <hr>
+
+
+            <label><strong>FoodName</strong></label>
+            <input type="text" placeholder="Enter Name" formControlName="foodName" required>
+            <!-- <span class="help-bpx" *ngIf="foodName?.touched && !foodName?.valid">Please Enter valid Food Name</span><p></p> -->
+
+
+
+            <label for="price"><strong>Price</strong></label>
+            <input type="text" placeholder="Enter Price" name="price" formControlName="price" required>
+            <!-- <span class="help-bpx" *ngIf="price?.touched && !price?.valid">Please Enter valid price</span><p> -->
+
+
+           
+            <label for="foodCategory"><strong>Category</strong></label>
+            <input type="text" placeholder="Enter category" name="foodCategory" formControlName="foodCategory" required>
+            <!-- <span class="help-bpx" *ngIf="foodCategory?.touched && !foodCategory?.valid">Please Enter valid foodCategory </span><p> -->
+
+
+
+           
+      
+        </div>
+
+        <div class="clearfix">
+            <button type="submit" class="signupbtn">Edit Food</button>
+        </div>
+
+    </form>
+
+
+</div>

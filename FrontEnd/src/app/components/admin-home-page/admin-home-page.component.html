@@ -1,0 +1,40 @@
+<p>admin-home-page works!</p>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" id="name">
+      <img
+        src="https://cdn3.iconfinder.com/data/icons/diversity-avatars/64/chef-man-white-256.png"
+        width="35" height="35" class="d-inline-block align-top" alt="Lab Logo">&nbsp;&nbsp;&nbsp;
+     
+    </a>
+      <a class="navbar-brand" href="#">Admin Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">       
+            <li class="nav-item">
+              <a class="nav-link" href="#" routerLink="/getAllUsers" >Users List</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#" routerLink="/getAllRestaurants" >Show Restaurant List</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#" routerLink="/addRestaurant" >Add Restaurant List</a>
+            </li>
+        </ul>
+      
+            <li class="nav-item">
+                <a class="nav-link"href="#" routerLink="*" ><div class="signoutTag">Sign-out</div></a>
+              </li>
+  
+     
+      </div>
+    </nav>
+  
+
+  <router-outlet></router-outlet>

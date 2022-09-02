@@ -1,0 +1,84 @@
+<!-- <p>register-user works!</p>
+
+<form [formGroup]='userForm'  (ngSubmit)='onSubmit()'>
+    <label for="userName">User Name: </label>
+    <input type="text"  formControlName="userName">   
+    
+    <label for="userPassword">Password: </label>
+    <input type="text"  formControlName="userPassword">
+
+    <label for="userEmail">Email: </label>
+    <input type="text"  formControlName="userEmail">
+
+    <label for="userMobileNo">Mobile Number: </label>
+    <input type="text"  formControlName="userMobileNo"> 
+    
+        <div formGroupName="address">
+        <h2>Address</h2>
+      
+        <label for="street">Area: </label>
+        <input id="street" type="text" formControlName="area">
+      
+        <label for="city">Street: </label>
+        <input id="city" type="text" formControlName="street">
+      
+        <label for="state">Pincode: </label>
+        <input id="state" type="text" formControlName="pincode">
+      </div>
+    <button>Submit</button>
+  </form> -->
+
+  
+  <div class="container">
+    
+  <form [formGroup]='userForm'  (ngSubmit)='onSubmit()'>
+
+    <mat-form-field appearance="fill">
+      <label>Name</label>
+      <input matInput formControlName="userName">
+    </mat-form-field>
+    <br>
+  
+    <mat-form-field appearance="fill">
+      <label>Password</label>
+      <input matInput formControlName="userPassword">
+    </mat-form-field>
+    <br>
+  
+    <mat-form-field appearance="fill">
+      <label>Email</label>
+      <input matInput formControlName="userEmail">
+    </mat-form-field>
+    <br>
+  
+    <mat-form-field appearance="fill">
+      <label>MobileNo</label>
+      <input matInput formControlName="userMobileNo">
+    </mat-form-field>
+    <br>
+  
+    <div formGroupName="address">
+  
+      <mat-form-field appearance="fill">
+        <label>Area</label>
+        <input matInput formControlName="area">
+      </mat-form-field>
+      <br>
+  
+      <mat-form-field appearance="fill">
+        <label>Street</label>
+        <input matInput formControlName="street">
+      </mat-form-field>
+      <br>
+  
+      <mat-form-field appearance="fill">
+        <label>Pincode</label>
+        <input matInput formControlName="pincode">
+      </mat-form-field>
+  
+    </div>
+  
+    <button>Submit</button>
+  </form>
+
+  </div>

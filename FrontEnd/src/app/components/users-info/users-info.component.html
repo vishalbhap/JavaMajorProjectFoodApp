@@ -1,0 +1,32 @@
+
+
+
+
+    <table  class="table">
+        <thead>
+          <tr>
+         
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">MobileNo</th>
+            <th scope="col">Area</th>
+            <th scope="col">Street</th>
+            <th scope="col">Pincode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of userArray">
+         
+            <td>{{user.userName}}</td>
+            <td>{{user.userEmail}}</td>
+            <td>{{user.userMobileNo}}</td>
+            <td>{{user.address.area}}</td>
+            <td>{{user.address.street}}</td>
+            <td>{{user.address.pincode}}</td>
+          </tr>
+        
+        </tbody>
+      </table>
+
+  
+  
